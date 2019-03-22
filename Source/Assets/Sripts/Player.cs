@@ -54,7 +54,7 @@ namespace War
         {
             if(Cards.Count == 0)
             {
-                Debug.LogError("out of cards", gameObject);
+                //Debug.LogError("out of cards", gameObject);
                 return null;
             }
 

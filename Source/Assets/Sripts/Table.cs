@@ -104,12 +104,6 @@ namespace War
         //add x num cards face down to the war section
         public void AddWarCards(int playerId, List<Card> cards)
         {
-            if(PlayerSections[playerId].WarHolders.Count != cards.Count)
-            {
-                Debug.LogError("Got " + cards.Count + " only expecting " + Settings.NumCardsForWar);
-                return;
-            }
-
             for (int i = 0; i < cards.Count; i++)
             {
                 if(cards[i] == null)
